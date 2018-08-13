@@ -34,7 +34,9 @@ namespace RoodLettertypeChaos
 
         private void convertButton_MouseClick(object sender, MouseEventArgs e)
         {
-            ransomLetter.Text = textBox1.Text;
+            ransomLetter.Text = "";
+            ransomLetter.SelectionFont = new Font("Verdana", 16, FontStyle.Bold);
+            ransomLetter.AppendText(textBox1.Text);
         }
     }
 }
