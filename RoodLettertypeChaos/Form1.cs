@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+//FIXME: fontfamilies niet via Form1 constructor doorgeven
+
 namespace RoodLettertypeChaos
 {
     public partial class Form1 : Form
