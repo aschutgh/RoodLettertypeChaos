@@ -12,10 +12,13 @@ namespace RoodLettertypeChaos
 {
     public partial class Form1 : Form
     {
-        public Form1()
+        public Form1(FontFamily[] ffamily)
         {
             InitializeComponent();
+            FFamily = ffamily;
         }
+
+        public FontFamily[] FFamily { get; set; }
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -34,27 +37,31 @@ namespace RoodLettertypeChaos
 
         private void convertButton_MouseClick(object sender, MouseEventArgs e)
         {
+            Random rand = new Random();
+            ransomLetter.Text = "";
+            ransomLetter.SelectionFont = new Font(FFamily[4].Name, 16, FontStyle.Bold);
+            ransomLetter.AppendText(textBox1.Text);
+
             //ransomLetter.Text = "";
-            //ransomLetter.SelectionFont = new Font("Verdana", 16, FontStyle.Bold);
-            //ransomLetter.AppendText(textBox1.Text);
+            //bool alternate = false;
 
-            bool alternate = false;
+            //textBox1.Text = FFamily[0].Name;
 
-            foreach (char c in textBox1.Text)
-            {
-                if (alternate == false)
-                {
-                    ransomLetter.SelectionFont = new Font("Verdana", 16, FontStyle.Bold);
-                    ransomLetter.AppendText(c.ToString());
-                    alternate = true;
-                }
-                else if (alternate == true)
-                {
-                    ransomLetter.SelectionFont = new Font("Verdana", 16, FontStyle.Regular);
-                    ransomLetter.AppendText(c.ToString());
-                    alternate = false;
-                }
-            }
+            //foreach (char c in textBox1.Text)
+            //{
+            //    if (alternate == false)
+            //    {
+            //        ransomLetter.SelectionFont = new Font("Verdana", 16, FontStyle.Bold);
+            //        ransomLetter.AppendText(c.ToString());
+            //        alternate = true;
+            //    }
+            //    else if (alternate == true)
+            //    {
+            //        ransomLetter.SelectionFont = new Font("Verdana", 16, FontStyle.Regular);
+            //        ransomLetter.AppendText(c.ToString());
+            //        alternate = false;
+            //    }
+            //}
         }
     }
 }
