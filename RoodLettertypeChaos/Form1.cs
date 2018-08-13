@@ -39,8 +39,16 @@ namespace RoodLettertypeChaos
         {
             Random rand = new Random();
             ransomLetter.Text = "";
-            ransomLetter.SelectionFont = new Font(FFamily[4].Name, 16, FontStyle.Bold);
-            ransomLetter.AppendText(textBox1.Text);
+
+            foreach (char c in textBox1.Text)
+            {
+
+                ransomLetter.SelectionFont = new Font(FFamily[rand.Next(0, FFamily.Length - 1)].Name, 16, FontStyle.Bold);
+                ransomLetter.AppendText(c.ToString());
+            }
+            
+            //ransomLetter.SelectionFont = new Font(FFamily[4].Name, 16, FontStyle.Bold);
+            //ransomLetter.AppendText(textBox1.Text);
         }
     }
 }
