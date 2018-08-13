@@ -8,7 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-//FIXME: fontfamilies niet via Form1 constructor doorgeven
+//FIXME: fontfamilies niet via Form1 constructor doorgeven???
+// Ik weet (nog) niet wat correct is...
 
 namespace RoodLettertypeChaos
 {
