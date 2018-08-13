@@ -27,14 +27,14 @@ namespace RoodLettertypeChaos
 
         }
 
-        private void button1_MouseClick(object sender, MouseEventArgs e)
-        {
+        //private void button1_MouseClick(object sender, MouseEventArgs e)
+        //{
 
-        }
+        //}
 
         private void convertButton_MouseClick(object sender, MouseEventArgs e)
         {
-
+            ransomLetter.Text = textBox1.Text;
         }
     }
 }
