@@ -41,27 +41,6 @@ namespace RoodLettertypeChaos
             ransomLetter.Text = "";
             ransomLetter.SelectionFont = new Font(FFamily[4].Name, 16, FontStyle.Bold);
             ransomLetter.AppendText(textBox1.Text);
-
-            //ransomLetter.Text = "";
-            //bool alternate = false;
-
-            //textBox1.Text = FFamily[0].Name;
-
-            //foreach (char c in textBox1.Text)
-            //{
-            //    if (alternate == false)
-            //    {
-            //        ransomLetter.SelectionFont = new Font("Verdana", 16, FontStyle.Bold);
-            //        ransomLetter.AppendText(c.ToString());
-            //        alternate = true;
-            //    }
-            //    else if (alternate == true)
-            //    {
-            //        ransomLetter.SelectionFont = new Font("Verdana", 16, FontStyle.Regular);
-            //        ransomLetter.AppendText(c.ToString());
-            //        alternate = false;
-            //    }
-            //}
         }
     }
 }
