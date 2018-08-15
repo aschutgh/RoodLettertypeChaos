@@ -10,6 +10,8 @@ using System.Windows.Forms;
 
 //FIXME: fontfamilies niet via Form1 constructor doorgeven???
 // Ik weet (nog) niet wat correct is...
+// Het programma is een beetje traag.
+// Misschien het aantal fonts maar beperken tot bijvoorbeeld 10 stuks.
 
 namespace RoodLettertypeChaos
 {
